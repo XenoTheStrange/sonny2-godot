@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc8r0jm7bcibu"
+path="res://.godot/imported/Armor Games Intro.mp3-d06158e63d4c7fba846a119bcc4cf894.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Armor Games Intro.mp3"
+dest_files=["res://.godot/imported/Armor Games Intro.mp3-d06158e63d4c7fba846a119bcc4cf894.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

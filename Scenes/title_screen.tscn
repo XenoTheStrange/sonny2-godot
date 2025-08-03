@@ -1,0 +1,842 @@
+[gd_scene load_steps=29 format=3 uid="uid://u87pvwbiewdq"]
+
+[ext_resource type="Texture2D" uid="uid://yjhkyplykt88" path="res://Sprites/Title/background.png" id="1_4gxqj"]
+[ext_resource type="Script" uid="uid://b6k8qhtqguigd" path="res://Scripts/title_screen.gd" id="1_0061g"]
+[ext_resource type="Texture2D" uid="uid://o6d8ejrav3db" path="res://Sprites/Title/splat.png" id="2_12m1t"]
+[ext_resource type="Texture2D" uid="uid://ctged5w0h0asw" path="res://Sprites/Title/armor1.png" id="2_twnyg"]
+[ext_resource type="Texture2D" uid="uid://b28cjhq086d18" path="res://Sprites/Title/decal.png" id="3_55kwv"]
+[ext_resource type="Texture2D" uid="uid://8wl0hlxur738" path="res://Sprites/Title/sonnylogo.png" id="4_twnyg"]
+[ext_resource type="LabelSettings" uid="uid://dbfwo4fl14ln6" path="res://Components/Label Settings/Manual Yellow Text.tres" id="7_6vd4x"]
+[ext_resource type="LabelSettings" uid="uid://3iq6ndlskg27" path="res://Components/Label Settings/credits_screen_titles.tres" id="7_n82rj"]
+[ext_resource type="LabelSettings" uid="uid://biricpidadcy" path="res://Components/Label Settings/title_screen_small.tres" id="9_0061g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5sh6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12m1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vd4x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n82rj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0061g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mikk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sqelc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n82rj"]
+font_size = 140
+shadow_size = 40
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0061g"]
+font_size = 140
+shadow_size = 50
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_12m1t"]
+bg_color = Color(0, 0, 0, 0.486275)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o1e67"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ycay6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bsy20"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07cxn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x2pfe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k1y01"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4blwa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vqgqr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pcucl"]
+
+[node name="Title Screen" type="Node2D"]
+script = ExtResource("1_0061g")
+metadata/_edit_vertical_guides_ = [1631.0, 1266.0]
+metadata/_edit_horizontal_guides_ = [1152.0]
+
+[node name="Sonnylogo" type="Sprite2D" parent="."]
+light_mask = 0
+visibility_layer = 2
+z_index = 1
+position = Vector2(1627, 659)
+scale = Vector2(1.05777, 1.05777)
+texture = ExtResource("4_twnyg")
+
+[node name="BackBtn" type="Button" parent="."]
+visible = false
+z_index = 2
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 2914.0
+offset_top = 2151.0
+offset_right = 3224.0
+offset_bottom = 2266.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="Back_Text" type="Label" parent="BackBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = -99.5
+offset_right = 177.5
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 13
+text = "Back"
+label_settings = SubResource("LabelSettings_n82rj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundElements" type="Node2D" parent="."]
+light_mask = 0
+
+[node name="Background" type="Sprite2D" parent="BackgroundElements"]
+position = Vector2(1631.75, 1160)
+scale = Vector2(2.01513, 1.9846)
+texture = ExtResource("1_4gxqj")
+
+[node name="Decal" type="Sprite2D" parent="BackgroundElements"]
+position = Vector2(1677.11, 1112)
+scale = Vector2(2.03613, 2.04936)
+texture = ExtResource("3_55kwv")
+
+[node name="Splat" type="Sprite2D" parent="BackgroundElements"]
+position = Vector2(544.75, 1020.25)
+scale = Vector2(1.7503, 1.955)
+texture = ExtResource("2_12m1t")
+
+[node name="Armor1" type="Sprite2D" parent="BackgroundElements"]
+position = Vector2(364.633, 103.875)
+scale = Vector2(2.02419, 2.02419)
+texture = ExtResource("2_twnyg")
+
+[node name="Copyright Notice" type="Label" parent="BackgroundElements"]
+offset_left = 37.0
+offset_top = 2097.0
+offset_right = 1297.0
+offset_bottom = 2274.0
+theme_override_colors/font_color = Color(0.60088, 0.94348, 0.953977, 1)
+theme_override_font_sizes/font_size = 57
+text = "Developed and published by Armor Games Copyright 2007-2008 Armor Games Inc."
+autowrap_mode = 2
+
+[node name="TitleScreenUI" type="Node2D" parent="."]
+light_mask = 0
+visibility_layer = 2
+
+[node name="StartButton" type="Button" parent="TitleScreenUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1441.0
+offset_top = 1217.0
+offset_right = 1818.0
+offset_bottom = 1351.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="Start_Text" type="Label" parent="TitleScreenUI/StartButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -183.0
+offset_top = -102.0
+offset_right = 184.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Start!"
+label_settings = SubResource("LabelSettings_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameManualButton" type="Button" parent="TitleScreenUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1383.0
+offset_top = 1455.0
+offset_right = 1861.0
+offset_bottom = 1531.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="GameManualText" type="Label" parent="TitleScreenUI/GameManualButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.5
+offset_top = -54.0
+offset_right = 233.5
+offset_bottom = 49.0
+grow_horizontal = 2
+grow_vertical = 2
+text = " Game Manual"
+label_settings = ExtResource("9_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayMoreGamesButton" type="Button" parent="TitleScreenUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1387.0
+offset_top = 1558.0
+offset_right = 1988.0
+offset_bottom = 1644.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="PlayMoreGamesText" type="Label" parent="TitleScreenUI/PlayMoreGamesButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -297.0
+offset_top = -61.5
+offset_right = 291.0
+offset_bottom = 41.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play More Games"
+label_settings = ExtResource("9_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlaySonny1Button" type="Button" parent="TitleScreenUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1387.0
+offset_top = 1664.0
+offset_right = 2199.0
+offset_bottom = 1751.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="PlaySonny1Text" type="Label" parent="TitleScreenUI/PlaySonny1Button"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -402.0
+offset_top = -62.0
+offset_right = 394.0
+offset_bottom = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play The Original Sonny"
+label_settings = ExtResource("9_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsButton" type="Button" parent="TitleScreenUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1387.0
+offset_top = 1766.0
+offset_right = 1641.0
+offset_bottom = 1841.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="CreditsText" type="Label" parent="TitleScreenUI/CreditsButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -134.0
+offset_top = -49.5
+offset_right = 132.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Credits"
+label_settings = ExtResource("9_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameManualUI" type="Node2D" parent="."]
+visible = false
+
+[node name="LeftPanel" type="Panel" parent="GameManualUI"]
+offset_left = 147.0
+offset_top = 248.0
+offset_right = 1485.0
+offset_bottom = 2047.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_12m1t")
+
+[node name="HowToPlayBtn" type="Button" parent="GameManualUI/LeftPanel"]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 159.0
+offset_right = 900.0
+offset_bottom = 243.0
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o1e67")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ycay6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bsy20")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_07cxn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x2pfe")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_k1y01")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4blwa")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vqgqr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pcucl")
+
+[node name="HowToPlayText" type="Label" parent="GameManualUI/LeftPanel/HowToPlayBtn"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -13.0
+offset_right = 456.0
+offset_bottom = 77.0
+text = "How do I play?"
+label_settings = ExtResource("7_6vd4x")
+
+[node name="WhatDoesItMeanBtn" type="Button" parent="GameManualUI/LeftPanel"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 390.0
+offset_right = 1170.0
+offset_bottom = 552.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o1e67")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ycay6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bsy20")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_07cxn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x2pfe")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_k1y01")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4blwa")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vqgqr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pcucl")
+
+[node name="WhatDoesItMeanText" type="Label" parent="GameManualUI/LeftPanel/WhatDoesItMeanBtn"]
+layout_mode = 0
+offset_left = -40.0
+offset_top = -12.0
+offset_right = 1040.0
+offset_bottom = 171.0
+text = "What do the colors on the buffs and numbers mean?"
+label_settings = ExtResource("7_6vd4x")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="TeamControlBtn" type="Button" parent="GameManualUI/LeftPanel"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 716.0
+offset_right = 886.0
+offset_bottom = 785.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o1e67")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ycay6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bsy20")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_07cxn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x2pfe")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_k1y01")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4blwa")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vqgqr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pcucl")
+
+[node name="TeamControlText" type="Label" parent="GameManualUI/LeftPanel/TeamControlBtn"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = -58.0
+offset_right = 760.0
+offset_bottom = 125.0
+text = "Team Control"
+label_settings = ExtResource("7_6vd4x")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="StatExplanationBtn" type="Button" parent="GameManualUI/LeftPanel"]
+layout_mode = 0
+offset_left = 278.0
+offset_top = 950.0
+offset_right = 1058.0
+offset_bottom = 1019.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o1e67")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ycay6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bsy20")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_07cxn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x2pfe")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_k1y01")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4blwa")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vqgqr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pcucl")
+
+[node name="StatExplanationText" type="Label" parent="GameManualUI/LeftPanel/StatExplanationBtn"]
+layout_mode = 0
+offset_left = -150.0
+offset_top = -58.0
+offset_right = 930.0
+offset_bottom = 125.0
+text = "What does each stat do?"
+label_settings = ExtResource("7_6vd4x")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HelpAmStuckBtn" type="Button" parent="GameManualUI/LeftPanel"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 1200.0
+offset_right = 1093.0
+offset_bottom = 1285.0
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o1e67")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ycay6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_bsy20")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_07cxn")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_x2pfe")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_k1y01")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4blwa")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vqgqr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pcucl")
+
+[node name="HelpAmStuckText" type="Label" parent="GameManualUI/LeftPanel/HelpAmStuckBtn"]
+layout_mode = 0
+offset_left = -119.0
+offset_top = -58.0
+offset_right = 961.0
+offset_bottom = 125.0
+text = "Help! I am stuck on a level!"
+label_settings = ExtResource("7_6vd4x")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="RightPanel" type="Panel" parent="GameManualUI"]
+offset_left = 1763.0
+offset_top = 251.0
+offset_right = 3101.0
+offset_bottom = 2050.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_12m1t")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="GameManualUI/RightPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.017
+anchor_top = 0.017
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.254
+offset_top = -0.583002
+offset_right = -21.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ManualScreenBlurb" type="RichTextLabel" parent="GameManualUI/RightPanel/ScrollContainer"]
+custom_minimum_size = Vector2(1292.46, 1743.35)
+layout_mode = 2
+theme_override_font_sizes/bold_italics_font_size = 65
+theme_override_font_sizes/italics_font_size = 65
+theme_override_font_sizes/mono_font_size = 65
+theme_override_font_sizes/normal_font_size = 65
+theme_override_font_sizes/bold_font_size = 65
+bbcode_enabled = true
+text = "Select a topic."
+
+[node name="CreditsUI" type="Node2D" parent="."]
+visible = false
+
+[node name="JobLabels" type="Node2D" parent="CreditsUI"]
+
+[node name="ProducerText" type="Label" parent="CreditsUI/JobLabels"]
+offset_left = 1262.0
+offset_top = 1063.0
+offset_right = 1571.0
+offset_bottom = 1159.0
+text = "Producer"
+label_settings = ExtResource("7_n82rj")
+
+[node name="ProductionAssistantText" type="Label" parent="CreditsUI/JobLabels"]
+offset_left = 863.0
+offset_top = 1190.0
+offset_right = 1572.0
+offset_bottom = 1286.0
+text = "Production Assistant"
+label_settings = ExtResource("7_n82rj")
+
+[node name="SoundAndMusicText" type="Label" parent="CreditsUI/JobLabels"]
+offset_left = 980.0
+offset_top = 1318.0
+offset_right = 1572.0
+offset_bottom = 1414.0
+text = "Sound And Music"
+label_settings = ExtResource("7_n82rj")
+
+[node name="AnimationText" type="Label" parent="CreditsUI/JobLabels"]
+offset_left = 1213.0
+offset_top = 1446.0
+offset_right = 1572.0
+offset_bottom = 1542.0
+text = "Animation"
+label_settings = ExtResource("7_n82rj")
+
+[node name="GraphicsAndArtworkText" type="Label" parent="CreditsUI/JobLabels"]
+offset_left = 819.0
+offset_top = 1574.0
+offset_right = 1572.0
+offset_bottom = 1670.0
+text = "Graphics And Artwork"
+label_settings = ExtResource("7_n82rj")
+
+[node name="MaleCastText" type="Label" parent="CreditsUI/JobLabels"]
+offset_left = 1233.0
+offset_top = 1702.0
+offset_right = 1572.0
+offset_bottom = 1798.0
+text = "Male Cast"
+label_settings = ExtResource("7_n82rj")
+
+[node name="FemaleCastText" type="Label" parent="CreditsUI/JobLabels"]
+offset_left = 1154.0
+offset_top = 1830.0
+offset_right = 1572.0
+offset_bottom = 1926.0
+text = "Female Cast"
+label_settings = ExtResource("7_n82rj")
+
+[node name="PeopleNames" type="Node2D" parent="CreditsUI"]
+
+[node name="JakrinText" type="Label" parent="CreditsUI/PeopleNames"]
+offset_left = 1668.0
+offset_top = 1063.0
+offset_right = 2552.0
+offset_bottom = 1159.0
+text = "Jakrin (Krin) Juangbhanich"
+label_settings = ExtResource("9_0061g")
+
+[node name="PhilippText" type="Label" parent="CreditsUI/PeopleNames"]
+offset_left = 1668.0
+offset_top = 1190.0
+offset_right = 2552.0
+offset_bottom = 1286.0
+text = "Philipp Knothe"
+label_settings = ExtResource("9_0061g")
+
+[node name="DavidText" type="Label" parent="CreditsUI/PeopleNames"]
+offset_left = 1668.0
+offset_top = 1319.0
+offset_right = 2552.0
+offset_bottom = 1415.0
+text = "David Orr"
+label_settings = ExtResource("9_0061g")
+
+[node name="WilliamText" type="Label" parent="CreditsUI/PeopleNames"]
+offset_left = 1668.0
+offset_top = 1447.0
+offset_right = 2552.0
+offset_bottom = 1543.0
+text = "William Arbuckle"
+label_settings = ExtResource("9_0061g")
+
+[node name="JoanText" type="Label" parent="CreditsUI/PeopleNames"]
+offset_left = 1668.0
+offset_top = 1575.0
+offset_right = 2552.0
+offset_bottom = 1671.0
+text = "Joan C.G."
+label_settings = ExtResource("9_0061g")
+
+[node name="AndyText" type="Label" parent="CreditsUI/PeopleNames"]
+offset_left = 1668.0
+offset_top = 1703.0
+offset_right = 2552.0
+offset_bottom = 1799.0
+text = "Andy Dennis"
+label_settings = ExtResource("9_0061g")
+
+[node name="MandiText" type="Label" parent="CreditsUI/PeopleNames"]
+offset_left = 1668.0
+offset_top = 1831.0
+offset_right = 2552.0
+offset_bottom = 1927.0
+text = "Mandi N."
+label_settings = ExtResource("9_0061g")
+
+[node name="PostStartUI" type="Node2D" parent="."]
+visible = false
+
+[node name="NewGameBtn" type="Button" parent="PostStartUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1263.0
+offset_top = 1217.0
+offset_right = 2006.0
+offset_bottom = 1351.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="NewGameText" type="Label" parent="PostStartUI/NewGameBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -374.0
+offset_top = -102.0
+offset_right = 365.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "New Game"
+label_settings = SubResource("LabelSettings_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoadGameBtn" type="Button" parent="PostStartUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1249.0
+offset_top = 1417.0
+offset_right = 2018.0
+offset_bottom = 1551.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="LoadGameText" type="Label" parent="PostStartUI/LoadGameBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -385.5
+offset_top = -102.0
+offset_right = 378.5
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Load Game"
+label_settings = SubResource("LabelSettings_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PVPArenaBtn" type="Button" parent="PostStartUI"]
+z_index = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1281.0
+offset_top = 1633.0
+offset_right = 1982.0
+offset_bottom = 1767.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="PVPArenaText" type="Label" parent="PostStartUI/PVPArenaBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -383.5
+offset_top = -102.0
+offset_right = 380.5
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "PVP Arena"
+label_settings = SubResource("LabelSettings_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewGameUI" type="Node2D" parent="."]
+visible = false
+
+[node name="LoadGameUI" type="Node2D" parent="."]
+visible = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="LoadGameUI"]
+offset_left = 1116.0
+offset_top = 257.0
+offset_right = 2421.0
+offset_bottom = 2099.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LoadGameUI/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="PVPArenaUI" type="Node2D" parent="."]
+visible = false
+
+[connection signal="pressed" from="BackBtn" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="TitleScreenUI/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="TitleScreenUI/GameManualButton" to="." method="_on_game_manual_button_pressed"]
+[connection signal="pressed" from="TitleScreenUI/PlayMoreGamesButton" to="." method="_on_play_more_games_button_pressed"]
+[connection signal="pressed" from="TitleScreenUI/PlaySonny1Button" to="." method="_on_play_sonny_1_button_pressed"]
+[connection signal="pressed" from="TitleScreenUI/CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="GameManualUI/LeftPanel/HowToPlayBtn" to="." method="_on_how_to_play_btn_pressed"]
+[connection signal="pressed" from="GameManualUI/LeftPanel/WhatDoesItMeanBtn" to="." method="_on_what_does_it_mean_btn_pressed"]
+[connection signal="pressed" from="GameManualUI/LeftPanel/TeamControlBtn" to="." method="_on_team_control_btn_pressed"]
+[connection signal="pressed" from="GameManualUI/LeftPanel/StatExplanationBtn" to="." method="_on_stat_explanation_btn_pressed"]
+[connection signal="pressed" from="GameManualUI/LeftPanel/HelpAmStuckBtn" to="." method="_on_help_am_stuck_btn_pressed"]
+[connection signal="pressed" from="PostStartUI/NewGameBtn" to="." method="_on_new_game_btn_pressed"]
+[connection signal="pressed" from="PostStartUI/LoadGameBtn" to="." method="_on_load_game_btn_pressed"]
+[connection signal="pressed" from="PostStartUI/PVPArenaBtn" to="." method="_on_pvp_arena_btn_pressed"]
