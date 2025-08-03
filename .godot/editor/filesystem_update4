@@ -1,0 +1,4 @@
+res://Scenes/title_screen.tscn
+res://Components/Label Settings/Manual Yellow Text.tres
+res://Components/Label Settings/credits_screen_titles.tres
+res://Components/save_file_text_1.tscn
