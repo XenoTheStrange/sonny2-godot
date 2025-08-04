@@ -54,12 +54,20 @@ func _on_back_button_pressed() -> void:
 		toggle_visibility($LoadGameUI)
 		toggle_visibility($PostStartUI)
 		toggle_visibility($Sonnylogo)
-		destroy_slot_instances()
+		destroy_slot_instances($LoadGameUI/ScrollContainer/VBoxContainer)
 		screen = "PostStart"
 	if screen == "PVP Arena":
-		toggle_visibility($NewGameUI)
+		toggle_visibility($PVPArenaUI)
 		toggle_visibility($PostStartUI)
 		toggle_visibility($Sonnylogo)
+		destroy_slot_instances($PVPArenaUI/ScrollContainer/VBoxContainer 
+		
+		
+		
+		
+		
+		
+		)
 		screen = "PostStart"
 
 @onready var modtext = $GameManualUI/RightPanel/ScrollContainer/ManualScreenBlurb
@@ -91,20 +99,20 @@ func _on_load_game_btn_pressed() -> void:
 	toggle_visibility($PostStartUI)
 	toggle_visibility($LoadGameUI)
 	#TODO create loading function and make these buttons actually do something based on what slot they're targeting, etc.
-	add_button_instance(1) #filler for now
+	add_button_instance($LoadGameUI/ScrollContainer/VBoxContainer, 1) #filler for now
 	
 func _on_button_pressed(num):
 	print(num)
 
-func add_spacer():
+func add_spacer(target):
 	var spacer = ColorRect.new()
 	spacer.color = Color(0, 0, 0, 0)  # fully transparent
 	spacer.custom_minimum_size = Vector2(0, 1)
 	# It doens't need to be big since the seperation in the scroll box elements will increase it by like 50
-	$LoadGameUI/ScrollContainer/VBoxContainer.add_child(spacer)
+	target.add_child(spacer)
 
 
-func add_button_instance(num=0):
+func add_button_instance(target, num=0):
 	var button_scene := preload("res://Components/save_file_text_1.tscn")
 	var instance = button_scene.instantiate()
 	var button = instance.get_node("SlotLoadBtn")  # adjust path if deeper
@@ -113,11 +121,10 @@ func add_button_instance(num=0):
 	button.pressed.connect(func():
 		_on_button_pressed(num)
 )  # bind for context
-	$LoadGameUI/ScrollContainer/VBoxContainer.add_child(instance)
+	target.add_child(instance)
 	return instance
 
-func destroy_slot_instances():
-	var container = $LoadGameUI/ScrollContainer/VBoxContainer
+func destroy_slot_instances(container):
 	for child in container.get_children():
 		child.queue_free()
 
@@ -132,3 +139,5 @@ func _on_pvp_arena_btn_pressed() -> void:
 	toggle_visibility($Sonnylogo)
 	toggle_visibility($PostStartUI)
 	toggle_visibility($PVPArenaUI)
+	#TODO add logic to get game data or something with the buttons.
+	add_button_instance($PVPArenaUI/ScrollContainer/VBoxContainer)
