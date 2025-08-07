@@ -22,6 +22,7 @@ config/icon="uid://c2puljausmewq"
 
 Config="*res://Scripts/Config.gd"
 G="*res://Scripts/Globals.gd"
+U="*res://Scripts/Utils.gd"
 
 [display]
 

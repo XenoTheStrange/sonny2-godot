@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf3li31qdoahm"]
+
+[ext_resource type="Script" uid="uid://dccs6w2ilr6fi" path="res://Scenes/Title/scripts/class_selection_ui.gd" id="1_spnfx"]
+[ext_resource type="PackedScene" uid="uid://bpd5a48ukiioe" path="res://Components/buttons/back_btn.tscn" id="2_0ynsx"]
+
+[node name="ClassSelectionUI" type="Node2D"]
+script = ExtResource("1_spnfx")
+
+[node name="BackBtn" parent="." instance=ExtResource("2_0ynsx")]
+
+[connection signal="pressed" from="BackBtn" to="." method="_on_back_btn_pressed"]

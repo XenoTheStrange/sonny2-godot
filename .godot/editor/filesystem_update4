@@ -1,5 +1,34 @@
-res://Scenes/title_screen.tscn
+res://Components/save_file_text_1.tscn
 res://Components/Label Settings/Manual Yellow Text.tres
 res://Components/Label Settings/credits_screen_titles.tres
+res://Scenes/title_screen.tscn
 res://Scripts/title_screen.gd
-res://Components/save_file_text_1.tscn
+res://Scenes/Title/title_screen_ui.tscn
+res://Scripts/Globals.gd
+res://Scenes/Title/title_screen_ui.gd
+res://Scripts/utils.gd
+res://Scenes/Title/game_manual_ui.gd
+res://Scenes/Title/game_manual_ui.tscn
+res://Scenes/Title/credits_ui.tscn
+res://Scenes/Title/post_start_ui.gd
+res://Scenes/Title/post_start_ui.tscn
+res://Scenes/Title/load_game_ui.tscn
+res://Scenes/Title/back_btn.tscn
+res://Scenes/Title/back_btn.gd
+res://Scenes/Title/credits_ui.gd
+res://Scenes/Title/scripts/game_manual_ui.gd
+res://Scenes/Title/scripts/post_start_ui.gd
+res://Scenes/Title/scripts/load_game_ui.gd
+res://Scenes/Title/scripts/title_screen_ui.gd
+res://Scenes/Title/pvp_arena_ui.tscn
+res://Scenes/Title/scripts/pvp_arena_ui.gd
+res://Scenes/Title/title_main.tscn
+res://Scenes/Title/title_ui.tscn
+res://Scripts/armor_intro_finish.gd
+res://Scenes/Title/new_game_ui.tscn
+res://Scenes/Title/new_game_ui.gd
+res://Scenes/Title/scripts/class_selection_ui.gd
+res://Scenes/Title/class_selection_ui.tscn
+res://Scenes/Title/scripts/new_game_ui.gd
+res://Scenes/intro_animation.tscn
+res://Scenes/Intro/intro_and_configure_for_now.gd

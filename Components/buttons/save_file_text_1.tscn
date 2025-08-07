@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://blux8opay0kwb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_csol3"]
+font_size = 90
+shadow_size = 40
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_by6e5"]
+font_size = 90
+font_color = Color(0.533333, 1, 0.388235, 1)
+shadow_size = 40
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5uoqe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v6kdj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pscm3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5jwi8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5po8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0cp3a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6w47p"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(1400, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+
+[node name="SlotNumber" type="Label" parent="MarginContainer/CenterContainer/HBoxContainer"]
+layout_mode = 2
+text = "SLOT"
+label_settings = SubResource("LabelSettings_csol3")
+
+[node name="FileName" type="Label" parent="MarginContainer/CenterContainer/HBoxContainer"]
+custom_minimum_size = Vector2(830, 0)
+layout_mode = 2
+text = "< Empty Save File >"
+label_settings = SubResource("LabelSettings_by6e5")
+autowrap_mode = 2
+
+[node name="SlotLoadBtn" type="Button" parent="MarginContainer"]
+z_index = 2
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5uoqe")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_v6kdj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pscm3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_5jwi8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j5po8")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_0cp3a")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6w47p")
+flat = true

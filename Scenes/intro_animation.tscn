@@ -1,5 +1,6 @@
 [gd_scene load_steps=102 format=3 uid="uid://bfehrdtnu2uko"]
 
+[ext_resource type="Script" uid="uid://ccm8dm362wqqi" path="res://Scenes/Intro/intro_and_configure_for_now.gd" id="1_kin7b"]
 [ext_resource type="Texture2D" uid="uid://rxd3xds4c8mf" path="res://Animations/frame_animations/armorgames_intro/1.png" id="1_qog2e"]
 [ext_resource type="Texture2D" uid="uid://cle30hp3p1vpe" path="res://Animations/frame_animations/armorgames_intro/2.png" id="2_kin7b"]
 [ext_resource type="Texture2D" uid="uid://ce3oq76ljhywk" path="res://Animations/frame_animations/armorgames_intro/3.png" id="3_83m04"]
@@ -98,7 +99,6 @@
 [ext_resource type="Texture2D" uid="uid://bdkowud7x6t4v" path="res://Animations/frame_animations/armorgames_intro/96.png" id="96_fuema"]
 [ext_resource type="Texture2D" uid="uid://bi8o1fop08vhi" path="res://Animations/frame_animations/armorgames_intro/97.png" id="97_unnqj"]
 [ext_resource type="Texture2D" uid="uid://dvvoqae8kvwnh" path="res://Animations/frame_animations/armorgames_intro/98.png" id="98_2oarw"]
-[ext_resource type="Script" uid="uid://ccm8dm362wqqi" path="res://Scripts/armor_intro_finish.gd" id="99_c6hm3"]
 [ext_resource type="AudioStream" uid="uid://dc8r0jm7bcibu" path="res://Sounds/Armor Games Intro.mp3" id="100_dluwc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kyjor"]
@@ -404,6 +404,7 @@ animations = [{
 }]
 
 [node name="Intro Animation" type="Node2D"]
+script = ExtResource("1_kin7b")
 metadata/_edit_vertical_guides_ = [1619.0]
 metadata/_edit_horizontal_guides_ = [1150.0]
 
@@ -420,11 +421,8 @@ scale = Vector2(3.31227, 3.06332)
 sprite_frames = SubResource("SpriteFrames_kyjor")
 animation = &"ArmorGamesIntro"
 speed_scale = 0.7
-script = ExtResource("99_c6hm3")
 
 [node name="ArmorGamesAudio" type="AudioStreamPlayer2D" parent="ArmorGamesIntro"]
 stream = ExtResource("100_dluwc")
-autoplay = true
 
-[connection signal="animation_finished" from="ArmorGamesIntro" to="ArmorGamesIntro" method="_on_animation_finished"]
-[connection signal="animation_looped" from="ArmorGamesIntro" to="ArmorGamesIntro" method="_on_animation_looped"]
+[connection signal="animation_finished" from="ArmorGamesIntro" to="." method="_on_armor_games_intro_animation_finished"]

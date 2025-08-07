@@ -1,0 +1,129 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqojf21ac1jvj"]
+
+[ext_resource type="Script" uid="uid://be7o4uqesuxro" path="res://Scenes/Title/scripts/credits_ui.gd" id="1_8nd38"]
+[ext_resource type="LabelSettings" uid="uid://3iq6ndlskg27" path="res://Components/Label Settings/credits_screen_titles.tres" id="1_x1v7d"]
+[ext_resource type="LabelSettings" uid="uid://biricpidadcy" path="res://Components/Label Settings/title_screen_small.tres" id="2_4vaol"]
+[ext_resource type="PackedScene" uid="uid://bpd5a48ukiioe" path="res://Components/buttons/back_btn.tscn" id="4_7aoyn"]
+
+[node name="CreditsUI" type="Node2D"]
+script = ExtResource("1_8nd38")
+
+[node name="JobLabels" type="Node2D" parent="."]
+
+[node name="ProducerText" type="Label" parent="JobLabels"]
+offset_left = 1262.0
+offset_top = 1063.0
+offset_right = 1571.0
+offset_bottom = 1159.0
+text = "Producer"
+label_settings = ExtResource("1_x1v7d")
+
+[node name="ProductionAssistantText" type="Label" parent="JobLabels"]
+offset_left = 863.0
+offset_top = 1190.0
+offset_right = 1572.0
+offset_bottom = 1286.0
+text = "Production Assistant"
+label_settings = ExtResource("1_x1v7d")
+
+[node name="SoundAndMusicText" type="Label" parent="JobLabels"]
+offset_left = 980.0
+offset_top = 1318.0
+offset_right = 1572.0
+offset_bottom = 1414.0
+text = "Sound And Music"
+label_settings = ExtResource("1_x1v7d")
+
+[node name="AnimationText" type="Label" parent="JobLabels"]
+offset_left = 1213.0
+offset_top = 1446.0
+offset_right = 1572.0
+offset_bottom = 1542.0
+text = "Animation"
+label_settings = ExtResource("1_x1v7d")
+
+[node name="GraphicsAndArtworkText" type="Label" parent="JobLabels"]
+offset_left = 819.0
+offset_top = 1574.0
+offset_right = 1572.0
+offset_bottom = 1670.0
+text = "Graphics And Artwork"
+label_settings = ExtResource("1_x1v7d")
+
+[node name="MaleCastText" type="Label" parent="JobLabels"]
+offset_left = 1233.0
+offset_top = 1702.0
+offset_right = 1572.0
+offset_bottom = 1798.0
+text = "Male Cast"
+label_settings = ExtResource("1_x1v7d")
+
+[node name="FemaleCastText" type="Label" parent="JobLabels"]
+offset_left = 1154.0
+offset_top = 1830.0
+offset_right = 1572.0
+offset_bottom = 1926.0
+text = "Female Cast"
+label_settings = ExtResource("1_x1v7d")
+
+[node name="PeopleNames" type="Node2D" parent="."]
+
+[node name="JakrinText" type="Label" parent="PeopleNames"]
+offset_left = 1668.0
+offset_top = 1063.0
+offset_right = 2552.0
+offset_bottom = 1159.0
+text = "Jakrin (Krin) Juangbhanich"
+label_settings = ExtResource("2_4vaol")
+
+[node name="PhilippText" type="Label" parent="PeopleNames"]
+offset_left = 1668.0
+offset_top = 1190.0
+offset_right = 2552.0
+offset_bottom = 1286.0
+text = "Philipp Knothe"
+label_settings = ExtResource("2_4vaol")
+
+[node name="DavidText" type="Label" parent="PeopleNames"]
+offset_left = 1668.0
+offset_top = 1319.0
+offset_right = 2552.0
+offset_bottom = 1415.0
+text = "David Orr"
+label_settings = ExtResource("2_4vaol")
+
+[node name="WilliamText" type="Label" parent="PeopleNames"]
+offset_left = 1668.0
+offset_top = 1447.0
+offset_right = 2552.0
+offset_bottom = 1543.0
+text = "William Arbuckle"
+label_settings = ExtResource("2_4vaol")
+
+[node name="JoanText" type="Label" parent="PeopleNames"]
+offset_left = 1668.0
+offset_top = 1575.0
+offset_right = 2552.0
+offset_bottom = 1671.0
+text = "Joan C.G."
+label_settings = ExtResource("2_4vaol")
+
+[node name="AndyText" type="Label" parent="PeopleNames"]
+offset_left = 1668.0
+offset_top = 1703.0
+offset_right = 2552.0
+offset_bottom = 1799.0
+text = "Andy Dennis"
+label_settings = ExtResource("2_4vaol")
+
+[node name="MandiText" type="Label" parent="PeopleNames"]
+offset_left = 1668.0
+offset_top = 1831.0
+offset_right = 2552.0
+offset_bottom = 1927.0
+text = "Mandi N."
+label_settings = ExtResource("2_4vaol")
+
+[node name="BackBtn" parent="." instance=ExtResource("4_7aoyn")]
+
+[connection signal="pressed" from="BackBtn" to="." method="_on_back_btn_pressed"]
