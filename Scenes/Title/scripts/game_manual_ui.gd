@@ -22,6 +22,6 @@ func _on_help_am_stuck_btn_pressed() -> void:
 
 func _on_back_btn_pressed() -> void:
 	U.toggle_visibility(self)
-	U.toggle_visibility($"../Sonnylogo")
+	U.toggle_visibility($"../SonnyLogo")
 	U.toggle_visibility($"../TitleScreenUI")
 	modtext.text = G.LANG['ManualDefault']

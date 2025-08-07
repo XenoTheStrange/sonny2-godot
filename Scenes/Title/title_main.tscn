@@ -1,6 +1,5 @@
-[gd_scene load_steps=15 format=3 uid="uid://u87pvwbiewdq"]
+[gd_scene load_steps=14 format=3 uid="uid://u87pvwbiewdq"]
 
-[ext_resource type="Script" uid="uid://b6k8qhtqguigd" path="res://Scenes/Title/scripts/title_screen.gd" id="1_7gbse"]
 [ext_resource type="Texture2D" uid="uid://8wl0hlxur738" path="res://Sprites/Title/sonnylogo.png" id="2_ud3tk"]
 [ext_resource type="Texture2D" uid="uid://yjhkyplykt88" path="res://Sprites/Title/background.png" id="3_5mauq"]
 [ext_resource type="Texture2D" uid="uid://b28cjhq086d18" path="res://Sprites/Title/decal.png" id="4_tunp5"]
@@ -16,11 +15,10 @@
 [ext_resource type="PackedScene" uid="uid://cf3li31qdoahm" path="res://Scenes/Title/class_selection_ui.tscn" id="14_ud3tk"]
 
 [node name="Title Screen" type="Node2D"]
-script = ExtResource("1_7gbse")
 metadata/_edit_vertical_guides_ = [1631.0, 1266.0]
 metadata/_edit_horizontal_guides_ = [1152.0]
 
-[node name="Sonnylogo" type="Sprite2D" parent="."]
+[node name="SonnyLogo" type="Sprite2D" parent="."]
 light_mask = 0
 visibility_layer = 2
 z_index = 1

@@ -6,7 +6,7 @@ func _on_start_button_pressed() -> void:
 
 func _on_game_manual_button_pressed() -> void:
 	U.toggle_visibility(self)
-	U.toggle_visibility($"../Sonnylogo")
+	U.toggle_visibility($"../SonnyLogo")
 	U.toggle_visibility($"../GameManualUI")
 
 func _on_play_more_games_button_pressed() -> void:
