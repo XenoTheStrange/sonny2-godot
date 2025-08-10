@@ -1,13 +1,14 @@
+res://Resources/Classes/
+res://Shaders
+res://Components
 res://Scenes/Intro
 res://Scripts
 res://Scenes/Title
 res://Scenes/Title/scripts
-res://Components
 res://Components/Label Settings
 /hdd/tmp/godot/new-game-project
 /hdd/programs/Godot_v4.4.1-stable_mono_linux_x86_64/rcedit
 res://Languages
-res://Shaders
 res://Sprites
 res://
 res://Scenes

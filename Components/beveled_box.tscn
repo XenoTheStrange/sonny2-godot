@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://s5fcjxq5upns"]
+
+[ext_resource type="Texture2D" uid="uid://c5l7l3f1wfx1m" path="res://Sprites/pieces/Bevelbox.png" id="1_tyery"]
+
+[node name="BeveledBox" type="NinePatchRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tyery")
+patch_margin_left = 40
+patch_margin_top = 40
+patch_margin_right = 50
+patch_margin_bottom = 50
