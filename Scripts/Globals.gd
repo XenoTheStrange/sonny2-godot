@@ -20,7 +20,7 @@ enum DIFFICULTIES {
 
 var STATE = {
 	PlayerName = "Name",
-	PlayerClass = PLAYER_CLASSES["PSYCHOLOGICAL"]
+	PlayerClass = PLAYER_CLASSES.PSYCHOLOGICAL
 }
 
 func set_language(lang):

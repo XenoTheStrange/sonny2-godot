@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctlbikodxixye"
-path="res://.godot/imported/Ninja.png-e92f1a9101f8b9de060b1e9a03dc223a.ctex"
+uid="uid://413t5wilwqi3"
+path="res://.godot/imported/drop_shadow.png-dafd65849be12ceb0049203efec4bb02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Armorsets/Ninja.png"
-dest_files=["res://.godot/imported/Ninja.png-e92f1a9101f8b9de060b1e9a03dc223a.ctex"]
+source_file="res://Sprites/drop_shadow.png"
+dest_files=["res://.godot/imported/drop_shadow.png-dafd65849be12ceb0049203efec4bb02.ctex"]
 
 [params]
 

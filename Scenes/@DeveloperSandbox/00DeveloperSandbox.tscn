@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://opv8gmhmra22"]
+[gd_scene load_steps=3 format=3 uid="uid://opv8gmhmra22"]
 
 [ext_resource type="Script" uid="uid://b0hul1ba3wqjl" path="res://Scenes/@DeveloperSandbox/00DeveloperSandbox.gd" id="1_jyvet"]
+[ext_resource type="PackedScene" uid="uid://dqenvm6sj0a77" path="res://Components/Models/MODEL1.tscn" id="2_m88jn"]
 
 [node name="DeveloperSandbox" type="Node2D"]
 script = ExtResource("1_jyvet")
@@ -27,6 +28,10 @@ offset_right = 3250.0
 offset_bottom = 2303.0
 theme_override_font_sizes/font_size = 75
 text = "BG"
+
+[node name="Model1" parent="." instance=ExtResource("2_m88jn")]
+position = Vector2(1534, 801)
+scale = Vector2(0.75, 0.75)
 
 [connection signal="color_changed" from="ChangeBackgroundColorWidget/BGColorPicker" to="." method="_on_color_picker_color_changed"]
 [connection signal="pressed" from="ChangeBackgroundColorWidget/ChangeBackgroundColorButton" to="." method="_on_change_background_color_button_pressed"]

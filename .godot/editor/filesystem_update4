@@ -1,18 +1,5 @@
-res://Scenes/00 Load Game/loading_background_elements.tscn
+res://Components/Models/MODEL1.tscn
 res://Resources/Classes/Biological.tres
-res://Shaders/reduced_saturation.gdshader
-res://Scenes/00 Load Game/00LoadGame.tscn
-res://Scenes/00 Load Game/00_load_game.gd
-res://Scripts/Data.gd
-res://Scripts/Utils.gd
-res://Scenes/init.gd
-res://Scenes/02 Title/02TitleMain.tscn
-res://Components/label_settings/title_screen_small.tres
-res://Components/label_settings/ChooseSettingsWhite.tres
-res://Components/label_settings/ChooseSettingsOrange.tres
-res://Components/label_settings/ChooseSettingsYellow.tres
-res://Components/label_settings/ChooseSettingsGreen.tres
 res://Animations/Ability/AbilityBooms.tres
-res://Scenes/02 Title/background_elements.tscn
-res://Animations/Ability/boom.tscn
-res://Scripts/Globals.gd
+res://Shaders/reduced_saturation.gdshader
+res://Scenes/@DeveloperSandbox/00DeveloperSandbox.tscn
