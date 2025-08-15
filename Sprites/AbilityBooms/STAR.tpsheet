@@ -1,0 +1,186 @@
+{
+	"textures": [
+		{
+			"image": "STAR-0.png",
+			"size": {
+				"w": 1694,
+				"h": 1616
+			},
+			"sprites": [
+				{
+					"filename": "1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "2.png",
+					"region": {
+						"x": 847,
+						"y": 0,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "3.png",
+					"region": {
+						"x": 0,
+						"y": 808,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "4.png",
+					"region": {
+						"x": 847,
+						"y": 808,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "STAR-1.png",
+			"size": {
+				"w": 1694,
+				"h": 1616
+			},
+			"sprites": [
+				{
+					"filename": "5.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "6.png",
+					"region": {
+						"x": 847,
+						"y": 0,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "7.png",
+					"region": {
+						"x": 0,
+						"y": 808,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "8.png",
+					"region": {
+						"x": 847,
+						"y": 808,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "STAR-2.png",
+			"size": {
+				"w": 1694,
+				"h": 808
+			},
+			"sprites": [
+				{
+					"filename": "9.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "10.png",
+					"region": {
+						"x": 847,
+						"y": 0,
+						"w": 847,
+						"h": 808
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:e11d1609a4707bca021196b4adc80da3:520cfed2514a0ab8ed9e670fb6371991:0e7f3622f553237830ed80df591bd427$"
+	}
+}

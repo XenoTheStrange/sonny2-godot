@@ -1,0 +1,123 @@
+{
+	"textures": [
+		{
+			"image": "Ninja.png",
+			"size": {
+				"w": 1588,
+				"h": 1314
+			},
+			"sprites": [
+				{
+					"filename": "arm.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 393
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "chest.png",
+					"region": {
+						"x": 397,
+						"y": 0,
+						"w": 397,
+						"h": 657
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "foot.png",
+					"region": {
+						"x": 794,
+						"y": 0,
+						"w": 235,
+						"h": 106
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "hand.png",
+					"region": {
+						"x": 1191,
+						"y": 0,
+						"w": 141,
+						"h": 367
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "head.png",
+					"region": {
+						"x": 0,
+						"y": 657,
+						"w": 158,
+						"h": 227
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "leg.png",
+					"region": {
+						"x": 397,
+						"y": 657,
+						"w": 185,
+						"h": 608
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "shoulder.png",
+					"region": {
+						"x": 794,
+						"y": 657,
+						"w": 160,
+						"h": 169
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:52e95dd3989cb7bc8a6acd28babe9a1f:d3cb2ca6442d9ddb2bb3311d37c248cf:9866e962d721af3e31fc5c428fceaa17$"
+	}
+}

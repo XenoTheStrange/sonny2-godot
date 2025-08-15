@@ -1,0 +1,243 @@
+{
+	"textures": [
+		{
+			"image": "ex_AnasOut-0.png",
+			"size": {
+				"w": 2035,
+				"h": 1233
+			},
+			"sprites": [
+				{
+					"filename": "1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "2.png",
+					"region": {
+						"x": 407,
+						"y": 0,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "3.png",
+					"region": {
+						"x": 814,
+						"y": 0,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "4.png",
+					"region": {
+						"x": 1221,
+						"y": 0,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "5.png",
+					"region": {
+						"x": 1628,
+						"y": 0,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "6.png",
+					"region": {
+						"x": 0,
+						"y": 411,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "7.png",
+					"region": {
+						"x": 407,
+						"y": 411,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "8.png",
+					"region": {
+						"x": 814,
+						"y": 411,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "9.png",
+					"region": {
+						"x": 1221,
+						"y": 411,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "10.png",
+					"region": {
+						"x": 1628,
+						"y": 411,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "11.png",
+					"region": {
+						"x": 0,
+						"y": 822,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "12.png",
+					"region": {
+						"x": 407,
+						"y": 822,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "13.png",
+					"region": {
+						"x": 814,
+						"y": 822,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "14.png",
+					"region": {
+						"x": 1221,
+						"y": 822,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "15.png",
+					"region": {
+						"x": 1628,
+						"y": 822,
+						"w": 407,
+						"h": 411
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:b05f0e4f793d1aa304ee9f89a7725b25:f4caf886b214282668e78b8067f5e958:d2ce8a1cce4f83ee9d7be423ce07a5e9$"
+	}
+}

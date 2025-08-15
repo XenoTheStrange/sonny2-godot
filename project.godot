@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Sonny 2 Port"
-run/main_scene="uid://bfehrdtnu2uko"
+run/main_scene="uid://d0jessij5jmyk"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/show_image=false
 boot_splash/fullsize=false
@@ -23,6 +23,7 @@ config/icon="uid://c2puljausmewq"
 Config="*res://Scripts/Config.gd"
 G="*res://Scripts/Globals.gd"
 U="*res://Scripts/Utils.gd"
+Data="*res://Scripts/Data.gd"
 
 [display]
 

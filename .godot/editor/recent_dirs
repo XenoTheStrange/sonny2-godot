@@ -1,14 +1,21 @@
+res://Components/UI
+res://Scenes
+res://Scripts
+res://Scenes/00 Load Game
+res://Animations/Ability
+res://Sprites/AbilityBooms
+res://Animations/Ability/
+res://Resources/Abilities
+res://Scenes/02 Title/
+res://Components/label_settings
+res://Scenes/02 Title/buttons
+res://Resources/Characters/
+res://Resources/
 res://Resources/Classes/
 res://Shaders
 res://Components
-res://Scenes/Intro
-res://Scripts
-res://Scenes/Title
-res://Scenes/Title/scripts
-res://Components/Label Settings
 /hdd/tmp/godot/new-game-project
 /hdd/programs/Godot_v4.4.1-stable_mono_linux_x86_64/rcedit
 res://Languages
 res://Sprites
 res://
-res://Scenes

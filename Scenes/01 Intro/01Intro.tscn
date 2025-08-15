@@ -1,0 +1,428 @@
+[gd_scene load_steps=102 format=3 uid="uid://bfehrdtnu2uko"]
+
+[ext_resource type="Script" uid="uid://ccm8dm362wqqi" path="res://Scenes/01 Intro/intro_and_configure_for_now.gd" id="1_kin7b"]
+[ext_resource type="Texture2D" uid="uid://rxd3xds4c8mf" path="res://Sprites/animation_frames/armorgames_intro/1.png" id="1_qog2e"]
+[ext_resource type="Texture2D" uid="uid://cle30hp3p1vpe" path="res://Sprites/animation_frames/armorgames_intro/2.png" id="2_kin7b"]
+[ext_resource type="Texture2D" uid="uid://ce3oq76ljhywk" path="res://Sprites/animation_frames/armorgames_intro/3.png" id="3_83m04"]
+[ext_resource type="Texture2D" uid="uid://ccs1bslslj6mx" path="res://Sprites/animation_frames/armorgames_intro/4.png" id="4_aw077"]
+[ext_resource type="Texture2D" uid="uid://dk1qjpwsnud0r" path="res://Sprites/animation_frames/armorgames_intro/5.png" id="5_8sbgw"]
+[ext_resource type="Texture2D" uid="uid://k7feldcahgd6" path="res://Sprites/animation_frames/armorgames_intro/6.png" id="6_dkplv"]
+[ext_resource type="Texture2D" uid="uid://c68qwguq8xdo2" path="res://Sprites/animation_frames/armorgames_intro/7.png" id="7_r7x8g"]
+[ext_resource type="Texture2D" uid="uid://b36vlwm0b23vj" path="res://Sprites/animation_frames/armorgames_intro/8.png" id="8_bm34a"]
+[ext_resource type="Texture2D" uid="uid://b5ikc66af7b2t" path="res://Sprites/animation_frames/armorgames_intro/9.png" id="9_xrk56"]
+[ext_resource type="Texture2D" uid="uid://dx4o4abqfxjiw" path="res://Sprites/animation_frames/armorgames_intro/10.png" id="10_kwv4e"]
+[ext_resource type="Texture2D" uid="uid://drt5uqt2tfovq" path="res://Sprites/animation_frames/armorgames_intro/11.png" id="11_olqcb"]
+[ext_resource type="Texture2D" uid="uid://jrj6s22pqq0p" path="res://Sprites/animation_frames/armorgames_intro/12.png" id="12_nwbvi"]
+[ext_resource type="Texture2D" uid="uid://cdln2jbxr30eu" path="res://Sprites/animation_frames/armorgames_intro/13.png" id="13_73lfq"]
+[ext_resource type="Texture2D" uid="uid://cxh7g5s3bk2h8" path="res://Sprites/animation_frames/armorgames_intro/14.png" id="14_26ajo"]
+[ext_resource type="Texture2D" uid="uid://c4qgre2hamrf7" path="res://Sprites/animation_frames/armorgames_intro/15.png" id="15_2be8e"]
+[ext_resource type="Texture2D" uid="uid://bqd4adywpiown" path="res://Sprites/animation_frames/armorgames_intro/16.png" id="16_k5fe8"]
+[ext_resource type="Texture2D" uid="uid://c3g0g2x7ebuiy" path="res://Sprites/animation_frames/armorgames_intro/17.png" id="17_ejgq5"]
+[ext_resource type="Texture2D" uid="uid://btl6q4byspcst" path="res://Sprites/animation_frames/armorgames_intro/18.png" id="18_4murx"]
+[ext_resource type="Texture2D" uid="uid://bluf5ptja36dv" path="res://Sprites/animation_frames/armorgames_intro/19.png" id="19_na4ga"]
+[ext_resource type="Texture2D" uid="uid://6svi3wk0ivhg" path="res://Sprites/animation_frames/armorgames_intro/20.png" id="20_r1djx"]
+[ext_resource type="Texture2D" uid="uid://31t1pxwfpmuo" path="res://Sprites/animation_frames/armorgames_intro/21.png" id="21_m03wu"]
+[ext_resource type="Texture2D" uid="uid://bk1qihcnbihup" path="res://Sprites/animation_frames/armorgames_intro/22.png" id="22_ccfvy"]
+[ext_resource type="Texture2D" uid="uid://cxk3r7tkq57pi" path="res://Sprites/animation_frames/armorgames_intro/23.png" id="23_urtsf"]
+[ext_resource type="Texture2D" uid="uid://bhbg17h1v4q2d" path="res://Sprites/animation_frames/armorgames_intro/24.png" id="24_t5rhf"]
+[ext_resource type="Texture2D" uid="uid://cf7tk7ehcefu0" path="res://Sprites/animation_frames/armorgames_intro/25.png" id="25_wfutg"]
+[ext_resource type="Texture2D" uid="uid://crt7q6t1ou1wd" path="res://Sprites/animation_frames/armorgames_intro/26.png" id="26_02bbt"]
+[ext_resource type="Texture2D" uid="uid://w4klh2y56ewo" path="res://Sprites/animation_frames/armorgames_intro/27.png" id="27_i15nf"]
+[ext_resource type="Texture2D" uid="uid://vasycp3vgc4k" path="res://Sprites/animation_frames/armorgames_intro/28.png" id="28_vh1er"]
+[ext_resource type="Texture2D" uid="uid://cto5okqoydao7" path="res://Sprites/animation_frames/armorgames_intro/29.png" id="29_nhe5r"]
+[ext_resource type="Texture2D" uid="uid://dwmvqykpcwrft" path="res://Sprites/animation_frames/armorgames_intro/30.png" id="30_tqoc1"]
+[ext_resource type="Texture2D" uid="uid://c2xv3vvpph6g0" path="res://Sprites/animation_frames/armorgames_intro/31.png" id="31_seuge"]
+[ext_resource type="Texture2D" uid="uid://b1gsj4sfaw681" path="res://Sprites/animation_frames/armorgames_intro/32.png" id="32_erc5a"]
+[ext_resource type="Texture2D" uid="uid://cdbiwj43risdt" path="res://Sprites/animation_frames/armorgames_intro/33.png" id="33_8eeas"]
+[ext_resource type="Texture2D" uid="uid://ilwyy6dmyu" path="res://Sprites/animation_frames/armorgames_intro/34.png" id="34_1vvmd"]
+[ext_resource type="Texture2D" uid="uid://c36p2p0x21g8g" path="res://Sprites/animation_frames/armorgames_intro/35.png" id="35_o7vpj"]
+[ext_resource type="Texture2D" uid="uid://7vdwqi0lcypp" path="res://Sprites/animation_frames/armorgames_intro/36.png" id="36_8cbbr"]
+[ext_resource type="Texture2D" uid="uid://mj6tvs2ujhyt" path="res://Sprites/animation_frames/armorgames_intro/37.png" id="37_bxokl"]
+[ext_resource type="Texture2D" uid="uid://baroai3y2h7ql" path="res://Sprites/animation_frames/armorgames_intro/38.png" id="38_8babn"]
+[ext_resource type="Texture2D" uid="uid://4f54pe8fsdks" path="res://Sprites/animation_frames/armorgames_intro/39.png" id="39_0l73e"]
+[ext_resource type="Texture2D" uid="uid://dnhh7abxd46g2" path="res://Sprites/animation_frames/armorgames_intro/40.png" id="40_4kjgn"]
+[ext_resource type="Texture2D" uid="uid://cmdf7lkvcxx06" path="res://Sprites/animation_frames/armorgames_intro/41.png" id="41_kqkmh"]
+[ext_resource type="Texture2D" uid="uid://dpmkgjgb4b5j2" path="res://Sprites/animation_frames/armorgames_intro/42.png" id="42_56gn8"]
+[ext_resource type="Texture2D" uid="uid://byk01ts2wtgyw" path="res://Sprites/animation_frames/armorgames_intro/43.png" id="43_eihl6"]
+[ext_resource type="Texture2D" uid="uid://sufs2riyv0ar" path="res://Sprites/animation_frames/armorgames_intro/44.png" id="44_pi7rr"]
+[ext_resource type="Texture2D" uid="uid://ja2ilu7faavd" path="res://Sprites/animation_frames/armorgames_intro/45.png" id="45_gy8hq"]
+[ext_resource type="Texture2D" uid="uid://cg4m5gh0hq4mf" path="res://Sprites/animation_frames/armorgames_intro/46.png" id="46_yxgwt"]
+[ext_resource type="Texture2D" uid="uid://dycr3ttsj0m3" path="res://Sprites/animation_frames/armorgames_intro/47.png" id="47_px58o"]
+[ext_resource type="Texture2D" uid="uid://cqv6v011hsodc" path="res://Sprites/animation_frames/armorgames_intro/48.png" id="48_orsdj"]
+[ext_resource type="Texture2D" uid="uid://do7732uivx5ve" path="res://Sprites/animation_frames/armorgames_intro/49.png" id="49_ne03k"]
+[ext_resource type="Texture2D" uid="uid://cy0xvc4ixwgcx" path="res://Sprites/animation_frames/armorgames_intro/50.png" id="50_3pp3h"]
+[ext_resource type="Texture2D" uid="uid://by2ii76wh85mp" path="res://Sprites/animation_frames/armorgames_intro/51.png" id="51_1qnqg"]
+[ext_resource type="Texture2D" uid="uid://bxwe0uw7pcd1s" path="res://Sprites/animation_frames/armorgames_intro/52.png" id="52_wikxh"]
+[ext_resource type="Texture2D" uid="uid://7exo44ly2eb5" path="res://Sprites/animation_frames/armorgames_intro/53.png" id="53_757rt"]
+[ext_resource type="Texture2D" uid="uid://cqrp62hqyy5px" path="res://Sprites/animation_frames/armorgames_intro/54.png" id="54_eglfu"]
+[ext_resource type="Texture2D" uid="uid://d3fq6ld3107in" path="res://Sprites/animation_frames/armorgames_intro/55.png" id="55_svh0j"]
+[ext_resource type="Texture2D" uid="uid://wv4hflikbgt3" path="res://Sprites/animation_frames/armorgames_intro/56.png" id="56_wllrn"]
+[ext_resource type="Texture2D" uid="uid://ctrwq5vq6wahv" path="res://Sprites/animation_frames/armorgames_intro/57.png" id="57_ukkoy"]
+[ext_resource type="Texture2D" uid="uid://bjaqarmx1ghpr" path="res://Sprites/animation_frames/armorgames_intro/58.png" id="58_17do2"]
+[ext_resource type="Texture2D" uid="uid://dbb252dd5c1uc" path="res://Sprites/animation_frames/armorgames_intro/59.png" id="59_g0fkp"]
+[ext_resource type="Texture2D" uid="uid://q02l7arcgfmr" path="res://Sprites/animation_frames/armorgames_intro/60.png" id="60_ji2cv"]
+[ext_resource type="Texture2D" uid="uid://b8cy81rmdxrmi" path="res://Sprites/animation_frames/armorgames_intro/61.png" id="61_ri2jb"]
+[ext_resource type="Texture2D" uid="uid://30mdib8l2jnd" path="res://Sprites/animation_frames/armorgames_intro/62.png" id="62_6jpc7"]
+[ext_resource type="Texture2D" uid="uid://cgc7bayseb5ds" path="res://Sprites/animation_frames/armorgames_intro/63.png" id="63_lqy32"]
+[ext_resource type="Texture2D" uid="uid://foidyterntnw" path="res://Sprites/animation_frames/armorgames_intro/64.png" id="64_iei2l"]
+[ext_resource type="Texture2D" uid="uid://bilibdbo1hnoa" path="res://Sprites/animation_frames/armorgames_intro/65.png" id="65_5wydj"]
+[ext_resource type="Texture2D" uid="uid://bt5x7b6oupwgv" path="res://Sprites/animation_frames/armorgames_intro/66.png" id="66_pwwsk"]
+[ext_resource type="Texture2D" uid="uid://b8bogiltksfnh" path="res://Sprites/animation_frames/armorgames_intro/67.png" id="67_n11v7"]
+[ext_resource type="Texture2D" uid="uid://b3ftpfena0evy" path="res://Sprites/animation_frames/armorgames_intro/68.png" id="68_36m1h"]
+[ext_resource type="Texture2D" uid="uid://btv0gb5rht46k" path="res://Sprites/animation_frames/armorgames_intro/69.png" id="69_x1yvh"]
+[ext_resource type="Texture2D" uid="uid://can0isbqoiesp" path="res://Sprites/animation_frames/armorgames_intro/70.png" id="70_egg5n"]
+[ext_resource type="Texture2D" uid="uid://dflywc4yx4o72" path="res://Sprites/animation_frames/armorgames_intro/71.png" id="71_sdydp"]
+[ext_resource type="Texture2D" uid="uid://ky1w4bsirhk" path="res://Sprites/animation_frames/armorgames_intro/72.png" id="72_wwgcb"]
+[ext_resource type="Texture2D" uid="uid://7gswoiepvux8" path="res://Sprites/animation_frames/armorgames_intro/73.png" id="73_n55cj"]
+[ext_resource type="Texture2D" uid="uid://4yu1r2d300ke" path="res://Sprites/animation_frames/armorgames_intro/74.png" id="74_eq0cr"]
+[ext_resource type="Texture2D" uid="uid://dntocf5dxat6n" path="res://Sprites/animation_frames/armorgames_intro/75.png" id="75_qi4he"]
+[ext_resource type="Texture2D" uid="uid://b6x3c24cirub2" path="res://Sprites/animation_frames/armorgames_intro/76.png" id="76_htkqp"]
+[ext_resource type="Texture2D" uid="uid://cjg2o71qfxx88" path="res://Sprites/animation_frames/armorgames_intro/77.png" id="77_y4hji"]
+[ext_resource type="Texture2D" uid="uid://u17unwey7chd" path="res://Sprites/animation_frames/armorgames_intro/78.png" id="78_qc6tt"]
+[ext_resource type="Texture2D" uid="uid://cfcab2i481fmo" path="res://Sprites/animation_frames/armorgames_intro/79.png" id="79_1yrbe"]
+[ext_resource type="Texture2D" uid="uid://dirytxeexnpm6" path="res://Sprites/animation_frames/armorgames_intro/80.png" id="80_2xjqm"]
+[ext_resource type="Texture2D" uid="uid://gpmqlf4nhpw8" path="res://Sprites/animation_frames/armorgames_intro/81.png" id="81_trh8o"]
+[ext_resource type="Texture2D" uid="uid://bho5ig5leajyc" path="res://Sprites/animation_frames/armorgames_intro/82.png" id="82_o6257"]
+[ext_resource type="Texture2D" uid="uid://boir8rksjhksm" path="res://Sprites/animation_frames/armorgames_intro/83.png" id="83_c1tk0"]
+[ext_resource type="Texture2D" uid="uid://ptc3jcpyantp" path="res://Sprites/animation_frames/armorgames_intro/84.png" id="84_6kun0"]
+[ext_resource type="Texture2D" uid="uid://1lchim27jajd" path="res://Sprites/animation_frames/armorgames_intro/85.png" id="85_x51ck"]
+[ext_resource type="Texture2D" uid="uid://dihy23xyy7vwn" path="res://Sprites/animation_frames/armorgames_intro/86.png" id="86_jqqf7"]
+[ext_resource type="Texture2D" uid="uid://dl1bgw5kss0xf" path="res://Sprites/animation_frames/armorgames_intro/87.png" id="87_11ksp"]
+[ext_resource type="Texture2D" uid="uid://cudremdbb21ya" path="res://Sprites/animation_frames/armorgames_intro/88.png" id="88_hfbhj"]
+[ext_resource type="Texture2D" uid="uid://b6r7cbuehxmpe" path="res://Sprites/animation_frames/armorgames_intro/89.png" id="89_pu3jf"]
+[ext_resource type="Texture2D" uid="uid://cx2upmf006qwc" path="res://Sprites/animation_frames/armorgames_intro/90.png" id="90_2mevn"]
+[ext_resource type="Texture2D" uid="uid://cipbvmgkg3ov" path="res://Sprites/animation_frames/armorgames_intro/91.png" id="91_hre73"]
+[ext_resource type="Texture2D" uid="uid://cv351pa4mtb5d" path="res://Sprites/animation_frames/armorgames_intro/92.png" id="92_nwh66"]
+[ext_resource type="Texture2D" uid="uid://b63i8fo2bifr1" path="res://Sprites/animation_frames/armorgames_intro/93.png" id="93_5p0cy"]
+[ext_resource type="Texture2D" uid="uid://6khcksxcq5n8" path="res://Sprites/animation_frames/armorgames_intro/94.png" id="94_susqr"]
+[ext_resource type="Texture2D" uid="uid://rlm55d88k2hu" path="res://Sprites/animation_frames/armorgames_intro/95.png" id="95_j0huf"]
+[ext_resource type="Texture2D" uid="uid://bdkowud7x6t4v" path="res://Sprites/animation_frames/armorgames_intro/96.png" id="96_fuema"]
+[ext_resource type="Texture2D" uid="uid://bi8o1fop08vhi" path="res://Sprites/animation_frames/armorgames_intro/97.png" id="97_unnqj"]
+[ext_resource type="Texture2D" uid="uid://dvvoqae8kvwnh" path="res://Sprites/animation_frames/armorgames_intro/98.png" id="98_2oarw"]
+[ext_resource type="AudioStream" uid="uid://dc8r0jm7bcibu" path="res://Sounds/Armor Games Intro.mp3" id="100_dluwc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kyjor"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qog2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kin7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_83m04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aw077")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8sbgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dkplv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_r7x8g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bm34a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xrk56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kwv4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_olqcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nwbvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_73lfq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_26ajo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2be8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k5fe8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ejgq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4murx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_na4ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_r1djx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_m03wu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ccfvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_urtsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_t5rhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_wfutg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_02bbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_i15nf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_vh1er")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_nhe5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_tqoc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_seuge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_erc5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_8eeas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_1vvmd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_o7vpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_8cbbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_bxokl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_8babn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_0l73e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_4kjgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_kqkmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_56gn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_eihl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_pi7rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_gy8hq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_yxgwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_px58o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_orsdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ne03k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_3pp3h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_1qnqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_wikxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_757rt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_eglfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_svh0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_wllrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_ukkoy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_17do2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_g0fkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_ji2cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_ri2jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_6jpc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_lqy32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_iei2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_5wydj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_pwwsk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_n11v7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_36m1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_x1yvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_egg5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_sdydp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_wwgcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_n55cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_eq0cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_qi4he")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_htkqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_y4hji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_qc6tt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_1yrbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_2xjqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_trh8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_o6257")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_c1tk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_6kun0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_x51ck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_jqqf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_11ksp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_hfbhj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_pu3jf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_2mevn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_hre73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_nwh66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_5p0cy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_susqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_j0huf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_fuema")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_unnqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_2oarw")
+}],
+"loop": false,
+"name": &"ArmorGamesIntro",
+"speed": 24.0
+}]
+
+[node name="Intro Animation" type="Node2D"]
+script = ExtResource("1_kin7b")
+metadata/_edit_vertical_guides_ = [1619.0]
+metadata/_edit_horizontal_guides_ = [1150.0]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -18.9999
+offset_top = -35.9999
+offset_right = 3271.0
+offset_bottom = 2347.0
+color = Color(0, 0, 0, 1)
+
+[node name="ArmorGamesIntro" type="AnimatedSprite2D" parent="."]
+position = Vector2(1803.37, 1065.75)
+scale = Vector2(3.31227, 3.06332)
+sprite_frames = SubResource("SpriteFrames_kyjor")
+animation = &"ArmorGamesIntro"
+speed_scale = 0.7
+
+[node name="ArmorGamesAudio" type="AudioStreamPlayer2D" parent="ArmorGamesIntro"]
+stream = ExtResource("100_dluwc")
+
+[connection signal="animation_finished" from="ArmorGamesIntro" to="." method="_on_armor_games_intro_animation_finished"]

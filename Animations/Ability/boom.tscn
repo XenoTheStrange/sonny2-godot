@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5g2b81r6goa4"]
+
+[ext_resource type="SpriteFrames" uid="uid://dbowswr41o6s2" path="res://Animations/Ability/AbilityBooms.tres" id="1_oravl"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_oravl")
+animation = &"ANAS"

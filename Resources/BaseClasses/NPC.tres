@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="NPC" load_steps=2 format=3 uid="uid://c6j3t8iacyfsm"]
+
+[ext_resource type="Script" uid="uid://v11v23pntxvx" path="res://Resources/BaseClasses/NPC.gd" id="1_2hogi"]
+
+[resource]
+script = ExtResource("1_2hogi")
+CharacterName = "NPC"
+Controllable = false
+Abilities = []

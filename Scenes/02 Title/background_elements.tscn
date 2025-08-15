@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbxn6ypy4ght0"]
+
+[ext_resource type="Texture2D" uid="uid://yjhkyplykt88" path="res://Sprites/Title/background.png" id="1_8wa21"]
+[ext_resource type="Texture2D" uid="uid://b28cjhq086d18" path="res://Sprites/Title/decal.png" id="2_jt3aw"]
+[ext_resource type="Texture2D" uid="uid://o6d8ejrav3db" path="res://Sprites/Title/splat.png" id="3_2mbag"]
+[ext_resource type="Texture2D" uid="uid://ctged5w0h0asw" path="res://Sprites/Title/armor1.png" id="4_xq3gq"]
+
+[node name="BackgroundElements" type="Node2D"]
+light_mask = 0
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1631.75, 1160)
+scale = Vector2(2.01513, 1.9846)
+texture = ExtResource("1_8wa21")
+
+[node name="Decal" type="Sprite2D" parent="."]
+position = Vector2(1677.11, 1112)
+scale = Vector2(2.03613, 2.04936)
+texture = ExtResource("2_jt3aw")
+
+[node name="Splat" type="Sprite2D" parent="."]
+position = Vector2(544.75, 1020.25)
+scale = Vector2(1.7503, 1.955)
+texture = ExtResource("3_2mbag")
+
+[node name="Armor1" type="Sprite2D" parent="."]
+position = Vector2(444.633, 183.875)
+scale = Vector2(2.02419, 2.02419)
+texture = ExtResource("4_xq3gq")
+
+[node name="Copyright Notice" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 2097.0
+offset_right = 1297.0
+offset_bottom = 2274.0
+theme_override_colors/font_color = Color(0.60088, 0.94348, 0.953977, 1)
+theme_override_font_sizes/font_size = 57
+text = "Developed and published by Armor Games Copyright 2007-2008 Armor Games Inc."
+autowrap_mode = 2

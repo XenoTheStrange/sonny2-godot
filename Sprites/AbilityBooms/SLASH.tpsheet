@@ -1,0 +1,306 @@
+{
+	"textures": [
+		{
+			"image": "SLASH-0.png",
+			"size": {
+				"w": 1063,
+				"h": 1674
+			},
+			"sprites": [
+				{
+					"filename": "1.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "2.png",
+					"region": {
+						"x": 0,
+						"y": 837,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "SLASH-1.png",
+			"size": {
+				"w": 1063,
+				"h": 1674
+			},
+			"sprites": [
+				{
+					"filename": "3.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "4.png",
+					"region": {
+						"x": 0,
+						"y": 837,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "SLASH-2.png",
+			"size": {
+				"w": 1063,
+				"h": 1674
+			},
+			"sprites": [
+				{
+					"filename": "5.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "6.png",
+					"region": {
+						"x": 0,
+						"y": 837,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "SLASH-3.png",
+			"size": {
+				"w": 1063,
+				"h": 1674
+			},
+			"sprites": [
+				{
+					"filename": "7.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "8.png",
+					"region": {
+						"x": 0,
+						"y": 837,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "SLASH-4.png",
+			"size": {
+				"w": 1063,
+				"h": 1674
+			},
+			"sprites": [
+				{
+					"filename": "9.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "10.png",
+					"region": {
+						"x": 0,
+						"y": 837,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "SLASH-5.png",
+			"size": {
+				"w": 1063,
+				"h": 1674
+			},
+			"sprites": [
+				{
+					"filename": "11.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "12.png",
+					"region": {
+						"x": 0,
+						"y": 837,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "SLASH-6.png",
+			"size": {
+				"w": 1063,
+				"h": 1674
+			},
+			"sprites": [
+				{
+					"filename": "13.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "14.png",
+					"region": {
+						"x": 0,
+						"y": 837,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "SLASH-7.png",
+			"size": {
+				"w": 1063,
+				"h": 837
+			},
+			"sprites": [
+				{
+					"filename": "15.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 1063,
+						"h": 837
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:df4ed2e99d170d3e42a0716c992a17e4:36c31eed8f520a4c1d3c49d8f43c014b:7eb69dc0f700073a1169ad1c3aed5b00$"
+	}
+}

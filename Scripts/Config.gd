@@ -6,7 +6,9 @@ var config := ConfigFile.new()
 var default_settings := {
 	"skip_intro": false,
 	"fullscreen": "windowed",
-	"volume": 1
+	"volume": 1,
+	"sound_on": 1,
+	"autosave_on": 1
 }
 
 func _ready():

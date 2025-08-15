@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ClassData" load_steps=3 format=3 uid="uid://c7fsmwlyghfr2"]
 
-[ext_resource type="Script" uid="uid://cfvpcqnkp0k45" path="res://Resources/Classes/BaseClass.gd" id="1_86j74"]
+[ext_resource type="Script" uid="uid://cfvpcqnkp0k45" path="res://Resources/BaseClasses/CharacterClass.gd" id="1_86j74"]
 [ext_resource type="Texture2D" uid="uid://cwx2vymhfsk73" path="res://Sprites/Title/ClassSelect/Psychological.png" id="1_tp2rp"]
 
 [resource]
@@ -8,4 +8,5 @@ script = ExtResource("1_86j74")
 name = "Psychological"
 icon = ExtResource("1_tp2rp")
 glow_color = Color(3, 1, 3.5, 1)
+ID = 1
 metadata/_custom_type_script = "uid://cfvpcqnkp0k45"

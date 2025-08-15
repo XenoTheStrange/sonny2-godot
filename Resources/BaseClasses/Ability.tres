@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dyuwe3to3mgfr"]
+
+[ext_resource type="Script" uid="uid://dlqfss68vyxob" path="res://Resources/BaseClasses/Ability.gd" id="1_ik4q8"]
+
+[resource]
+script = ExtResource("1_ik4q8")
+name = "Unnamed Ability"
+times_equippable = 0
