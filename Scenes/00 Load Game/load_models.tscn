@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqk10312shkh1"]
+
+[sub_resource type="GDScript" id="GDScript_auv15"]
+script/source = "extends Node
+
+func _ready():
+	pass
+"
+
+[node name="LoadModels" type="Node"]
+script = SubResource("GDScript_auv15")

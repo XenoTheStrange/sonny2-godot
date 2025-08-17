@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvhbl12i5hk5k"
-path="res://.godot/imported/24.png-dcbd692d640bc183be42b66881fba82e.ctex"
+uid="uid://ghg38lsnvc14"
+path="res://.godot/imported/foot.png-d667176afb3227c3f459e9ee8a838eb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/TEMPORARY/24.png"
-dest_files=["res://.godot/imported/24.png-dcbd692d640bc183be42b66881fba82e.ctex"]
+source_file="res://Sprites/BodyParts/Male1/foot.png"
+dest_files=["res://.godot/imported/foot.png-d667176afb3227c3f459e9ee8a838eb6.ctex"]
 
 [params]
 

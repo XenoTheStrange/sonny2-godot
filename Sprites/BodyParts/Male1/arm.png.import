@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvjh7cgyycqwa"
-path="res://.godot/imported/katana_custom.png-b2e65688546691d77ffeb07fb33beff5.ctex"
+uid="uid://bagbm4713vcwi"
+path="res://.godot/imported/arm.png-d227e9d3e850e46059d9bc224816d813.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Weapons/katana_custom.png"
-dest_files=["res://.godot/imported/katana_custom.png-b2e65688546691d77ffeb07fb33beff5.ctex"]
+source_file="res://Sprites/BodyParts/Male1/arm.png"
+dest_files=["res://.godot/imported/arm.png-d227e9d3e850e46059d9bc224816d813.ctex"]
 
 [params]
 
