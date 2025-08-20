@@ -1,0 +1,84 @@
+[gd_scene load_steps=14 format=3 uid="uid://df461nhe7y82a"]
+
+[ext_resource type="PackedScene" uid="uid://cbxn6ypy4ght0" path="res://Scenes/TITLE/background_elements.tscn" id="2_1dqdv"]
+[ext_resource type="Texture2D" uid="uid://8wl0hlxur738" path="res://Sprites/Title/sonnylogo.png" id="2_ud3tk"]
+[ext_resource type="PackedScene" uid="uid://debqkbjw45jw2" path="res://Scenes/TITLE/title_ui.tscn" id="7_bhh5p"]
+[ext_resource type="PackedScene" uid="uid://41jles5baayn" path="res://Scenes/TITLE/load_game_ui.tscn" id="8_xb84q"]
+[ext_resource type="PackedScene" uid="uid://exqh60nfe4ht" path="res://Scenes/TITLE/game_manual_ui.tscn" id="9_w44cc"]
+[ext_resource type="PackedScene" uid="uid://bqojf21ac1jvj" path="res://Scenes/TITLE/credits_ui.tscn" id="10_8glwy"]
+[ext_resource type="PackedScene" uid="uid://dg8mcq5vgektr" path="res://Scenes/TITLE/post_start_ui.tscn" id="11_pp4tg"]
+[ext_resource type="PackedScene" uid="uid://pl8eek01ys3t" path="res://Scenes/TITLE/new_game_ui.tscn" id="12_46ywn"]
+[ext_resource type="PackedScene" uid="uid://b78bukxbvcg7d" path="res://Scenes/TITLE/pvp_arena_ui.tscn" id="13_actln"]
+[ext_resource type="PackedScene" uid="uid://cf3li31qdoahm" path="res://Scenes/TITLE/class_selection_ui.tscn" id="14_ud3tk"]
+[ext_resource type="PackedScene" uid="uid://ceevwfwk1tdh3" path="res://Scenes/TITLE/choose_settings_ui.tscn" id="14_xvehj"]
+[ext_resource type="PackedScene" uid="uid://c5g2b81r6goa4" path="res://Animations/Ability/boom.tscn" id="15_587y5"]
+
+[sub_resource type="Environment" id="Environment_1dqdv"]
+background_mode = 3
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
+glow_enabled = true
+
+[node name="Title Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [1631.0, 1736.0]
+metadata/_edit_horizontal_guides_ = [1152.0]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1dqdv")
+
+[node name="SonnyLogo" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1.2, 1.2, 1)
+light_mask = 0
+visibility_layer = 2
+z_index = 1
+position = Vector2(1627, 659)
+scale = Vector2(1.05777, 1.05777)
+texture = ExtResource("2_ud3tk")
+
+[node name="BackgroundElements" parent="." instance=ExtResource("2_1dqdv")]
+
+[node name="TitleScreenUI" parent="." instance=ExtResource("7_bhh5p")]
+
+[node name="LoadGameUI" parent="." instance=ExtResource("8_xb84q")]
+visible = false
+layout_mode = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GameManualUI" parent="." instance=ExtResource("9_w44cc")]
+visible = false
+layout_mode = 1
+
+[node name="CreditsUI" parent="." instance=ExtResource("10_8glwy")]
+visible = false
+layout_mode = 1
+
+[node name="PostStartUI" parent="." instance=ExtResource("11_pp4tg")]
+visible = false
+layout_mode = 1
+
+[node name="NewGameUI" parent="." instance=ExtResource("12_46ywn")]
+visible = false
+layout_mode = 1
+
+[node name="PVPArenaUI" parent="." instance=ExtResource("13_actln")]
+visible = false
+layout_mode = 1
+
+[node name="ClassSelectionUI" parent="." instance=ExtResource("14_ud3tk")]
+visible = false
+layout_mode = 1
+
+[node name="ChooseSettingsUI" parent="." instance=ExtResource("14_xvehj")]
+visible = false
+layout_mode = 1
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("15_587y5")]
+position = Vector2(2421, 1217)
+animation = &"ex_DOWN"

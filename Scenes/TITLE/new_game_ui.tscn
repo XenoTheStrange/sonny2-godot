@@ -1,0 +1,102 @@
+[gd_scene load_steps=11 format=3 uid="uid://pl8eek01ys3t"]
+
+[ext_resource type="Script" uid="uid://bm4ayvgphbfh" path="res://Scenes/TITLE/scripts/new_game_ui.gd" id="1_cs6p6"]
+[ext_resource type="PackedScene" uid="uid://cv1ofmylgllba" path="res://Components/UI/back_button.tscn" id="2_ri3xj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cs6p6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhuxo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03nvd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_daj1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_po8c6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_utkyk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e0vj1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c37px"]
+font_size = 140
+shadow_size = 50
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="NewGameUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_cs6p6")
+metadata/_edit_vertical_guides_ = [1625.0]
+metadata/_edit_horizontal_guides_ = [1152.0]
+
+[node name="LineEdit" type="LineEdit" parent="."]
+z_index = 1
+layout_mode = 0
+offset_left = 615.0
+offset_top = 1058.0
+offset_right = 2635.0
+offset_bottom = 1258.0
+theme_override_colors/font_placeholder_color = Color(1, 0.834144, 0.337099, 0.537255)
+theme_override_colors/font_color = Color(0.917647, 0.733333, 0, 1)
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/font_size = 100
+placeholder_text = "Enter your name"
+alignment = 1
+max_length = 50
+caret_blink = true
+caret_force_displayed = true
+
+[node name="OkBtn" type="Button" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 697.0
+offset_top = 266.0
+offset_right = 915.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cs6p6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_yhuxo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_03nvd")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_daj1t")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_po8c6")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_utkyk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_e0vj1")
+flat = true
+
+[node name="OkTxt" type="Label" parent="OkBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -188.5
+offset_top = -102.0
+offset_right = 178.5
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "OK"
+label_settings = SubResource("LabelSettings_c37px")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" parent="." instance=ExtResource("2_ri3xj")]
+layout_mode = 1
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="OkBtn" to="." method="_on_ok_btn_pressed"]

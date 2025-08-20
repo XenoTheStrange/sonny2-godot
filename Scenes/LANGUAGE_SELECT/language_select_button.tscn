@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://bg5ykxll1kkec"]
+
+[ext_resource type="Shader" uid="uid://ddrbieasf77ag" path="res://Shaders/reduced_saturation.gdshader" id="1_jq88u"]
+[ext_resource type="Script" uid="uid://cktkfmg2npe53" path="res://Scenes/LANGUAGE_SELECT/flagbox.gd" id="1_w5eyg"]
+[ext_resource type="Script" uid="uid://b7qbttkmih2vk" path="res://Scenes/LANGUAGE_SELECT/language_select_button.gd" id="2_hxa35"]
+[ext_resource type="Texture2D" uid="uid://64bjehlsoexh" path="res://Sprites/LanguageFlags/ENGLISH.png" id="2_uvfly"]
+[ext_resource type="PackedScene" uid="uid://s5fcjxq5upns" path="res://Components/UI/beveled_box.tscn" id="3_6dalj"]
+
+[sub_resource type="Environment" id="Environment_j0fqi"]
+background_mode = 3
+glow_enabled = true
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_2v558"]
+
+[sub_resource type="Compositor" id="Compositor_kgo6u"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2v558"]
+shader = ExtResource("1_jq88u")
+shader_parameter/saturation = 0.0
+
+[node name="BoxContainer" type="BoxContainer"]
+offset_right = 1207.0
+offset_bottom = 360.0
+script = ExtResource("1_w5eyg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_j0fqi")
+camera_attributes = SubResource("CameraAttributesPractical_2v558")
+compositor = SubResource("Compositor_kgo6u")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 100
+
+[node name="LangSelectButton" type="TextureRect" parent="HBoxContainer"]
+material = SubResource("ShaderMaterial_2v558")
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("2_uvfly")
+stretch_mode = 2
+script = ExtResource("2_hxa35")
+
+[node name="BeveledBox" parent="HBoxContainer/LangSelectButton" instance=ExtResource("3_6dalj")]
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 620.0
+offset_bottom = 360.0
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/LangSelectButton/BeveledBox"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/LangSelectButton/BeveledBox/MarginContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+
+[node name="LangName" type="RichTextLabel" parent="HBoxContainer"]
+z_index = 2
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/shadow_offset_x = 5
+theme_override_font_sizes/normal_font_size = 75
+text = "LANGUAGENAME"
+fit_content = true
+autowrap_mode = 0
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="HBoxContainer/LangSelectButton/BeveledBox/MarginContainer/Button" to="HBoxContainer/LangSelectButton" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/LangSelectButton/BeveledBox/MarginContainer/Button" to="HBoxContainer/LangSelectButton" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer/LangSelectButton/BeveledBox/MarginContainer/Button" to="HBoxContainer/LangSelectButton" method="_on_button_pressed"]

@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://cv1ofmylgllba"]
+
+[ext_resource type="Script" uid="uid://tk18o0mvex3e" path="res://Components/UI/back_button.gd" id="1_r2qg2"]
+[ext_resource type="LabelSettings" uid="uid://cmm3vqdnc61u4" path="res://Components/label_settings/back_btn.tres" id="2_r2qg2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5sh6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12m1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vd4x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n82rj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0061g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mikk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sqelc"]
+
+[node name="BackButton" type="Control"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_r2qg2")
+
+[node name="BoxContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -359.0
+offset_top = -192.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+theme_override_constants/margin_right = 50
+
+[node name="Text" type="Label" parent="BoxContainer"]
+layout_mode = 2
+text = "Back "
+label_settings = ExtResource("2_r2qg2")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="BoxContainer/Text"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true

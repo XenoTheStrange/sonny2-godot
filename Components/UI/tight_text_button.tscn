@@ -1,0 +1,51 @@
+[gd_scene load_steps=10 format=3 uid="uid://fu4a46xh25c2"]
+
+[ext_resource type="Script" uid="uid://rh8m8566jslg" path="res://Components/UI/tight_text_button.gd" id="1_22ik4"]
+[ext_resource type="LabelSettings" uid="uid://biricpidadcy" path="res://Components/label_settings/title_screen_small.tres" id="1_jukgf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5sh6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12m1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vd4x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n82rj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0061g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mikk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sqelc"]
+
+[node name="TightTextButton" type="BoxContainer"]
+size_flags_horizontal = 2
+size_flags_vertical = 2
+script = ExtResource("1_22ik4")
+
+[node name="Text" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "abcd"
+label_settings = ExtResource("1_jukgf")
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Text"]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true

@@ -2,27 +2,30 @@
 extends Node
 
 var DEVMODE: bool = true
-var DEVMODE_TARGET_SCENE = "DEV_SANDBOX"
+var DEVMODE_TARGET_SCENE = "LANGUAGE_SELECT"
 var LANG = {}
+var LANGC = "English" # LANG_CURRENT
 
-var PLAYER_CLASSES := {
-	PSYCHOLOGICAL = load("res://Resources/Classes/Psychological.tres"),
-	BIOLOGICAL    = load("res://Resources/Classes/Biological.tres"),
-	HYDRAULIC     = load("res://Resources/Classes/Hydraulic.tres"),
-	DUMMY         = load("res://Resources/Classes/Dummy.tres")
+#Cosmic is actually "Magic" but I changed it to line up with the manual text.
+enum ELEMENTS {
+	PHYSICAL, COSMIC, ICE, FIRE, LIGHTNING, EARTH, SHADOW, POISON
 }
+var ELEMENT_COLORS: Array[String] = ["#C40000","#FB95C8","#68CBF4","#FF6600","#FFCC00","#856B47","#664D80","#508349"]
+#var ELEMENTS: Array[String] = ["Physical","Cosmic","Ice","Fire","Lightning","Earth","Shadow","Poison"]
+
+var Sound_Enabled := true
+var Autosave_Enabled := true
+var Difficulty = DIFFICULTIES.EASY
+var Do_Tutorial = true
 
 enum DIFFICULTIES {
-	EASY = 1,
-	CHALLENGING = 2,
-	HEROIC = 3
+	EASY,
+	CHALLENGING,
+	HEROIC
 }
 
 var STATE = {
 	PlayerName = "Name",
-	PlayerClass = PLAYER_CLASSES.PSYCHOLOGICAL
+	PlayerClass = 0,
+	Difficulty = 0
 }
-
-func set_language(lang):
-	var script = load("res://Languages/" + lang + ".gd").new()
-	LANG = script.define_texts()

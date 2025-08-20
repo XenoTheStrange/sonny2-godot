@@ -1,0 +1,161 @@
+[gd_scene load_steps=11 format=3 uid="uid://dg8mcq5vgektr"]
+
+[ext_resource type="Script" uid="uid://408sb74snuah" path="res://Scenes/TITLE/scripts/post_start_ui.gd" id="1_2v185"]
+[ext_resource type="PackedScene" uid="uid://cv1ofmylgllba" path="res://Components/UI/back_button.tscn" id="2_xhwmw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5sh6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12m1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vd4x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n82rj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0061g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mikk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sqelc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0061g"]
+font_size = 140
+shadow_size = 50
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="PostStartUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2v185")
+
+[node name="BackButton" parent="." instance=ExtResource("2_xhwmw")]
+layout_mode = 1
+text = "Back "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(1500, 600)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -750.0
+offset_top = 48.0
+offset_right = 750.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="NewGameBtn" type="Button" parent="VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_vertical = 3
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="NewGameText" type="Label" parent="VBoxContainer/NewGameBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -374.0
+offset_top = -102.0
+offset_right = 365.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "New Game"
+label_settings = SubResource("LabelSettings_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LoadGameBtn" type="Button" parent="VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_vertical = 3
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="LoadGameText" type="Label" parent="VBoxContainer/LoadGameBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -385.5
+offset_top = -102.0
+offset_right = 378.5
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Load Game"
+label_settings = SubResource("LabelSettings_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PVPArenaBtn" type="Button" parent="VBoxContainer"]
+z_index = 1
+layout_mode = 2
+size_flags_vertical = 3
+mouse_force_pass_scroll_events = false
+mouse_default_cursor_shape = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w5sh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_12m1t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6vd4x")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_n82rj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0061g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8mikk")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sqelc")
+flat = true
+
+[node name="PVPArenaText" type="Label" parent="VBoxContainer/PVPArenaBtn"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -383.5
+offset_top = -102.0
+offset_right = 380.5
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "PVP Arena"
+label_settings = SubResource("LabelSettings_0061g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/NewGameBtn" to="." method="_on_new_game_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/LoadGameBtn" to="." method="_on_load_game_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/PVPArenaBtn" to="." method="_on_pvp_arena_btn_pressed"]

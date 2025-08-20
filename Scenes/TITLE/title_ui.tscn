@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://debqkbjw45jw2"]
+
+[ext_resource type="Script" uid="uid://b20y35i48bbqq" path="res://Scenes/TITLE/scripts/title_screen_ui.gd" id="1_os1lo"]
+[ext_resource type="PackedScene" uid="uid://fu4a46xh25c2" path="res://Components/UI/tight_text_button.tscn" id="4_p7kuf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bm77d"]
+font_size = 140
+shadow_size = 50
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="TitleScreenUI" type="Node2D"]
+light_mask = 0
+visibility_layer = 2
+script = ExtResource("1_os1lo")
+metadata/_edit_vertical_guides_ = [1380.0]
+metadata/_edit_horizontal_guides_ = [1446.0]
+
+[node name="StartButton" parent="." instance=ExtResource("4_p7kuf")]
+offset_left = 1447.0
+offset_top = 1183.0
+offset_right = 1814.0
+offset_bottom = 1375.0
+text = "Start!"
+
+[node name="Text" parent="StartButton" index="0"]
+text = "Start!"
+label_settings = SubResource("LabelSettings_bm77d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 1386.0
+offset_top = 1433.0
+offset_right = 2182.0
+offset_bottom = 1829.0
+theme_override_constants/separation = 10
+
+[node name="GameManualButton" parent="VBoxContainer" instance=ExtResource("4_p7kuf")]
+layout_mode = 2
+text = "abcd"
+
+[node name="PlayMoreGamesButton" parent="VBoxContainer" instance=ExtResource("4_p7kuf")]
+layout_mode = 2
+text = "abcd"
+
+[node name="PlaySonny1Button" parent="VBoxContainer" instance=ExtResource("4_p7kuf")]
+layout_mode = 2
+text = "abcd"
+
+[node name="CreditsButton" parent="VBoxContainer" instance=ExtResource("4_p7kuf")]
+layout_mode = 2
+text = "abcd"
+
+[editable path="StartButton"]

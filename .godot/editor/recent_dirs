@@ -1,14 +1,14 @@
-res://Scenes/00 Load Game
+res://Scenes/TITLE/scripts
 res://Components/UI
+res://Components/label_settings
+res://Scenes/LANGUAGE_SELECT
+res://Sprites/Title
 res://Scenes
 res://Scripts
 res://Animations/Ability
 res://Sprites/AbilityBooms
 res://Animations/Ability/
 res://Resources/Abilities
-res://Scenes/02 Title/
-res://Components/label_settings
-res://Scenes/02 Title/buttons
 res://Resources/Characters/
 res://Resources/
 res://Resources/Classes/

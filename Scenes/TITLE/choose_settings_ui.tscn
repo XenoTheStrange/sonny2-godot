@@ -1,0 +1,156 @@
+[gd_scene load_steps=7 format=3 uid="uid://ceevwfwk1tdh3"]
+
+[ext_resource type="Script" uid="uid://bd0cd0ud11x1j" path="res://Scenes/TITLE/scripts/choose_settings_ui.gd" id="1_ppupy"]
+[ext_resource type="LabelSettings" uid="uid://biricpidadcy" path="res://Components/label_settings/title_screen_small.tres" id="1_ywt58"]
+[ext_resource type="PackedScene" uid="uid://dfwjgmto72eba" path="res://Scenes/TITLE/buttons/settings_select_button.tscn" id="2_ppupy"]
+[ext_resource type="PackedScene" uid="uid://cmi80uaetekf7" path="res://Scenes/TITLE/buttons/settings_select_button_small.tscn" id="3_4d5ui"]
+[ext_resource type="PackedScene" uid="uid://cv1ofmylgllba" path="res://Components/UI/back_button.tscn" id="5_mtcnk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mtcnk"]
+font_size = 115
+shadow_size = 50
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="ChooseSettingsUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ppupy")
+
+[node name="PleaseConfigureLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1157.0
+offset_top = 416.0
+offset_right = 2190.0
+offset_bottom = 512.0
+text = "Please Configure Your Settings"
+label_settings = ExtResource("1_ywt58")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 571.0
+offset_right = 3026.0
+offset_bottom = 2050.0
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 75
+
+[node name="BigSettingsContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/VBoxContainer/BigSettingsContainer"]
+custom_minimum_size = Vector2(2926.48, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="DifficultyToggle" parent="ScrollContainer/VBoxContainer/BigSettingsContainer/MarginContainer" instance=ExtResource("2_ppupy")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Difficulty:"
+selected_text = "Easy"
+
+[node name="MarginContainer2" type="MarginContainer" parent="ScrollContainer/VBoxContainer/BigSettingsContainer"]
+custom_minimum_size = Vector2(2926, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="TutorialToggle" parent="ScrollContainer/VBoxContainer/BigSettingsContainer/MarginContainer2" instance=ExtResource("2_ppupy")]
+unique_name_in_owner = true
+layout_mode = 2
+label_text = "Tutorial Level:"
+selected_text = "Yea, sure!"
+
+[node name="SmallSettingsContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer"]
+custom_minimum_size = Vector2(2924.33, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="SoundToggle" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer/MarginContainer" instance=ExtResource("3_4d5ui")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+label_text = "Sound:"
+selected_text = "On"
+
+[node name="MarginContainer2" type="MarginContainer" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer"]
+visible = false
+custom_minimum_size = Vector2(2925.64, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="EffectsToggle" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer/MarginContainer2" instance=ExtResource("3_4d5ui")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+label_text = "Effects:"
+selected_text = "N/A"
+
+[node name="MarginContainer3" type="MarginContainer" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer"]
+visible = false
+custom_minimum_size = Vector2(2923.73, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="GraphicsToggle" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer/MarginContainer3" instance=ExtResource("3_4d5ui")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+label_text = "Graphics:"
+selected_text = "N/A"
+
+[node name="MarginContainer4" type="MarginContainer" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer"]
+custom_minimum_size = Vector2(2923.72, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="AutosaveToggle" parent="ScrollContainer/VBoxContainer/SmallSettingsContainer/MarginContainer4" instance=ExtResource("3_4d5ui")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+label_text = "Autosave:"
+selected_text = "On"
+
+[node name="PlayButtonLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "PLAY"
+label_settings = SubResource("LabelSettings_mtcnk")
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="ScrollContainer/VBoxContainer/PlayButtonLabel"]
+custom_minimum_size = Vector2(282.965, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -50.5
+offset_right = 152.0
+offset_bottom = 57.5
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="BackButton" parent="." instance=ExtResource("5_mtcnk")]
+layout_mode = 1
+
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/PlayButtonLabel/PlayButton" to="." method="_on_play_button_pressed"]
