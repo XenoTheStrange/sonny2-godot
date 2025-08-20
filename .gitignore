@@ -1,2 +1,5 @@
 /.godot/imported
 /.godot/tmp
+*.import/
+*.import
+*.uid

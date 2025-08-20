@@ -8,10 +8,3 @@ res://Components/label_settings/ChooseSettingsYellow.tres
 res://Components/label_settings/ChooseSettingsWhite.tres
 res://Components/label_settings/ChooseSettingsGreen.tres
 res://Animations/Ability/AbilityBooms.tres
-res://Scenes/TITLE/class_selection_ui.tscn
-res://Scenes/TITLE/buttons/ClassSelectButton.tscn
-res://Scenes/TITLE/choose_settings_ui.tscn
-res://Components/UI/tight_text_button.tscn
-res://Components/UI/tight_text_button.gd
-res://Scenes/LOAD_GAME/00_load_game.gd
-res://Scripts/Globals.gd
