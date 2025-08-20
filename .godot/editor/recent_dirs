@@ -1,3 +1,4 @@
+/hdd/tmp/godot/sonny2-godot
 res://Scenes/TITLE/scripts
 res://Components/UI
 res://Components/label_settings
@@ -14,7 +15,6 @@ res://Resources/
 res://Resources/Classes/
 res://Shaders
 res://Components
-/hdd/tmp/godot/new-game-project
 /hdd/programs/Godot_v4.4.1-stable_mono_linux_x86_64/rcedit
 res://Languages
 res://Sprites

@@ -15,9 +15,11 @@ enum filetypes {
 }
 
 func _ready():
+	resources_loading = []
+	resources_failed_to_load = []
 	progress_bar.max_value = 0
 	set_screen_window_type()
-	load_language_folder("res://Languages/")
+	load_language_folder("Languages/")
 	load_game()
 
 func load_language_folder(path: String):
@@ -51,25 +53,30 @@ func set_screen_window_type():
 		DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_BORDERLESS, true)
 
 func load_game():
-	load_from_dir(filetypes.CLASS, "res://Resources/Classes/")
-	load_from_dir(filetypes.SPRITE, "res://Sprites/")
-	load_from_dir(filetypes.SCENE, "res://Scenes/")
-	load_from_dir(filetypes.MODEL, "res://Components/Models/")
+	load_from_dir(filetypes.CLASS, "Resources/Classes/")
+	load_from_dir(filetypes.SPRITE, "Sprites/")
+	load_from_dir(filetypes.SCENE, "Scenes/")
+	load_from_dir(filetypes.MODEL, "Components/Models/")
 	progress_bar.value = 0
 	loading_stage = 1
 
-"""Grab from file an index of known scenes in object notation, NAME: "res://path.
+"""Grab from file an index of known scenes in object notation, NAME: "user://path.
 Start loading them. _process() will poll for their status and call a function when the're all done."""
 
 
 func load_from_dir(type, path: String):
-	var dir := DirAccess.open(path)
+	var dir := DirAccess.open(G.GAMEDIR + path)
+	print(G.GAMEDIR)
+	print(path)
+	print("HELLO, ", dir)
 	if not dir:
+		print("[ERROR] Failed to load from dir, no dir at path: ", path)
 		return
 
 	dir.list_dir_begin()
 	var file_name = dir.get_next()
 	while file_name != "":
+		#print("[HELP] Tried to read file: ", file_name)
 		match type:
 			filetypes.MODEL:
 				if not dir.current_is_dir() and file_name.ends_with(".tscn"):
@@ -113,10 +120,8 @@ func load_from_dir(type, path: String):
 					ResourceLoader.load_threaded_request(fullpath)
 					resources_loading.append([type, fullpath, nam])
 
-
 		file_name = dir.get_next()
 	dir.list_dir_end()
-
 
 func _process(_delta):
 	match loading_stage:
@@ -132,6 +137,7 @@ func update_loading_bar():
 		loading_stage = 2
 
 func proceed():
+	U.print_nested_dict(Data.Scenes)
 	loading_stage = 3
 	if G.DEVMODE:
 		U.go_to_scene(Data.Scenes[G.DEVMODE_TARGET_SCENE])
@@ -176,9 +182,9 @@ func handle_resouce_load_finished(LoadData: Array):
 		filetypes.MODEL:
 			Data.Models[LoadData[2]] = data
 		filetypes.SPRITE:
-			# turn the relative path (without res:// and extension) into keys
-			var rel_path = LoadData[1].trim_prefix("res://")      # Sprites/Armorsets/Ninja/arm.png
-			var parts = rel_path.split("/")                       # ["Sprites","Armorsets","Ninja","arm.png"]
+			# turn the relative path (without user:// and extension) into keys
+			#var rel_path = LoadData[1].trim_prefix("user://")      # Sprites/Armorsets/Ninja/arm.png
+			var parts = LoadData[1].split("/")                       # ["Sprites","Armorsets","Ninja","arm.png"]
 			parts.remove_at(0)                                    # optionally strip "Sprites" if you don’t want it
 			parts[parts.size() - 1] = parts[-1].get_basename() # drop extension for last element
 			_set_nested_dict(Data.Sprites, parts, data)

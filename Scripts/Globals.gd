@@ -6,6 +6,9 @@ var DEVMODE_TARGET_SCENE = "LANGUAGE_SELECT"
 var LANG = {}
 var LANGC = "English" # LANG_CURRENT
 
+var EXEPATH = OS.get_executable_path()
+var GAMEDIR = ProjectSettings.globalize_path("res://")
+
 #Cosmic is actually "Magic" but I changed it to line up with the manual text.
 enum ELEMENTS {
 	PHYSICAL, COSMIC, ICE, FIRE, LIGHTNING, EARTH, SHADOW, POISON
